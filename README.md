@@ -13,11 +13,11 @@
 <br>
 
 ## Check It Out
-<p>Project Link: https://phishing-url-detection-by-datawizard.streamlit.app</p>
+<p>Project Link: https://secure-link-sorcerer.streamlit.app</p>
 <br>
 
 ## Methods
-<p>Machine Learning model: Random Forest Classifier algorithm</p>
+<p>Machine Learning model: Decision Tree Classifier algorithm</p>
 <br>
 
 ## Tools
