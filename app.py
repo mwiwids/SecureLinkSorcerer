@@ -324,18 +324,18 @@ if urls:
         st.error("This isn't valid URL :thumbsdown:")
     else:
         import sklearn
-        st.success(sklearn.__version__)
+        # st.success(sklearn.__version__)
         # st.success(pickle.format_version)
         
-        load_model = pickle.load(open('modelRFC.pkl', 'rb'))
+        load_model = pickle.load(open('modelDTC.pkl', 'rb'))
 
         test_data = URL_Converter(urls)         
         
         prediction = load_model.predict(test_data)
         
         if prediction == 1:
-            st.success("This isn't a Phishing URL :thumbsup:")
+            st.success("This isn't a Phishing URL :thumbsup:" + sklearn.__version__)
         else:
-            st.error("Phishing URL :thumbsdown:")
+            st.error("Phishing URL :thumbsdown:" + sklearn.__version__)
 else:
     pass
